@@ -5,3 +5,11 @@ Detect the change in the similarity values.
 •	Record the parameters
 •	Fill 0 as similarity value for the missing files 
 Further step: using the WDM to calculate the similarity value
+
+--- Edit by RL 5/27---
+1. For each firm-year, calculate its simiarities with previous 5 years. Organize the data as <firm, year, t-1, t-2, t-3, t-4, t-5>
+2. Investigate if there is any difference in similarities for firms before or after fraud years
+   - e.g. check if similarities change significantly around fraud years
+   - Plot a few charts to get the intuition
+3. Identify unusual similarity changes and check if these changes are likely linked to frauds.
+4. Think about if Cosine similarity on TF-IDF can measure simiarity. Maybe WMD can be an alternative. Think about this step only after you complete Steps 1-3.
